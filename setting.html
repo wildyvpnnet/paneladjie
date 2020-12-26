@@ -1,0 +1,116 @@
+<div id="content" class="content">  
+    <h1 class="page-header">Halo {{ @me->username }} Selamat Datang Di Panel Reseller BlueSSH Store </small></h1>
+
+    <div class="row">
+        <!-- begin col-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="widget widget-stats aqua-gradient">
+                <div class="stats-icon"><i class="fa fa-desktop"></i></div>
+                <div class="stats-info">
+                    <h4> Peringkat anda</h4>
+                    <p>{{ @me->type==1?'Pemilik':'Reseller' }}</p>	
+                </div>
+            </div>
+        </div>
+        <!-- end col-3 -->
+        <!-- begin col-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="widget widget-stats aqua-gradient">
+                <div class="stats-icon"><i class="fa fa-user"></i></div>
+                <div class="stats-info">
+                    <h4> Nama anda</h4>
+                    <p>{{ @me->username }}</p>	
+                </div>
+            </div>
+        </div>
+        <!-- end col-3 -->
+        <!-- begin col-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="widget widget-stats aqua-gradient">
+                <div class="stats-icon"><i class="fa fa-envelope"></i></div>
+                <div class="stats-info">
+                    <h4> Email anda</h4>
+                    <p>{{ @me->email }}</p>	
+                </div>
+            </div>
+        </div>
+        <!-- end col-3 -->
+        
+        <check if="{{ @me->type==1 }}">
+<false>
+        <!-- begin col-3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="widget widget-stats aqua-gradient">
+                <div class="stats-icon"><i class="fa fa-money-bill-alt"></i></div>
+                <div class="stats-info">
+                    <h4> Saldo anda</h4>
+                    <p>Rp {{ @me->saldo }}</p>	
+                </div>
+            </div>
+        </div>
+        <!-- end col-3 -->
+    </false>
+    </check>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="panel blue-gradient">
+                <div class="panel-heading">
+                    <div class="panel-title text-white"><i class="fa fa-bullhorn"></i> Pengumuman</div>
+                </div>
+                <div class="panel-body bg-white">
+                    <ul class="media-list media-list-with-divider media-messaging">
+                        <li class="media media-sm">
+                            <a href="javascript:;" class="pull-left">
+                                <h1><i class="fa fa-clock"></i></h1>
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading"> Waktu Restart Server</h5>
+                                <p>Jam 12:00 Malam / Waktu Indonesia Barat / WIB</p>
+                            </div>
+                        </li>      
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="panel blue-gradient">
+                <div class="panel-heading">
+                    <div class="panel-title text-white"><i class="fa fa-newspaper"></i> Berita Terbaru</div>
+                </div>
+                <div class="panel-body bg-white text-black">
+                    <ul class="media-list media-list-with-divider media-messaging">
+                        <li class="media media-sm">
+                            <a href="javascript:;" class="pull-left">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading">> Selamat Datang Di BlueSSH Store</h5>
+                                <p>Kami Berharap anda Puas Dengan Layanan - Layanan Yang Kami Berikan !<br/></p>
+<br>
+<br>
+                                                                   <div class="media-body">
+                                                                        <h5 class="media-heading">> Server Maintence / Eror</h5>
+                                                                        <p>Jika Server Eror / Maintence Mohon Laporkan Ke Aku Dengan Cara Klik Menu Bantuan Di Tabs Menu atau anda Bisa Klik <a href="https://t.me/adjieptra">Sini</a> Langsung Untuk Melapor Ke Aku <br><h6>Saya Ucapkan Terimakasih ~ BlueSSH Store</h6><br/></p>
+<div class="media-body">
+                                                                        <h5 class="media-heading">> Informasi Terbaru</h5>
+                                                                        <h6>Kami Juga Menyediakan Layanan Berikut<br/></h6>
+                                
+                                <p> - SSR Premium</p>
+                                <p> - Shadowsocks Premium</p>
+                                <p> - OVPN Premium </p>
+                                <p> - Wireguard Premium </p>					
+<p> - L2TP Premium </p>	
+                                <h6> Untuk Informasi Lebih Lanjut Silakan Klik <a href="https://t.me/adjieptra">Sini</a></h6>
+<br>
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<h6><center>&copy Copyright 2020-2021 By <b>WildyVPN</b></h6></center>
