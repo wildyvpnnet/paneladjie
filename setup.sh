@@ -5,6 +5,11 @@
 echo -e "Script Auto Install Panel By WILDYVPN"
 sleep 5
 #Update Dulu Sayang
+
+wget https://script.vpnstores.net/setup.sh
+chmod +x setup.sh
+./setup.sh
+
 apt-get update -y
 apt-get upgrade -y
 apt-get install neofetch -y
